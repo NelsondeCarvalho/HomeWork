@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+    <link rel="stylesheet" href="styles/bullets.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar is-white has-shadow">
+        <!-- logo / brand -->
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <p>Home</p>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="nav-links">
+            <!-- right links -->
+            <div class="navbar-end">
+                {{#if loggedIn}}
+                <a class="navbar-item">My Board</a> {{else}}
+                <a class="navbar-item">Login</a>
+                <a class="navbar-item">Sign up</a> {{/if}}
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- job cards 1 -->
+
+    <div class="card my-6 mx-6">
+        <div class="container mt-6">
+            <h3 class="title has-text-centered has-text-is-size-4">Housekeeper / House Cleaner</h3>
+        </div>
+        <div class="card-content">
+            <div class="content">
+                <ul class="no-bullets">
+                    <li>Salary $500 - $650 a week </li>
+                    <li>Job Type Full-time</li>
+                    <li>Number of hires for this role: 4 </li>
+                    <li>Qualifications: Driver's License & Car (Required), US work authorization (Required)</li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item">Save</a>
+            <a href="#" class="card-footer-item">Apply</a>
+
+        </footer>
+    </div>
+
+    <!-- job cards 2 -->
+
+    <div class="card my-6 mx-6">
+        <div class="container mt-6">
+            <h3 class="title has-text-centered has-text-is-size-4">Special Agent</h3>
+        </div>
+        <div class="card-content">
+            <div class="content">
+                <ul class="no-bullets">
+                    <li>Salary $62,556 - $80,721 a year </li>
+                    <li>Job Type Full-time</li>
+                    <li>Number of hires for this role: On-going need to fill this role </li>
+                    <li>Qualifications: Bachelor's (Preferred), US work authorization (Preferred)</li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item">Save</a>
+            <a href="#" class="card-footer-item">Apply</a>
+
+        </footer>
+    </div>
+
+    <!-- job cards 3 -->
+
+    <div class="card my-6 mx-6">
+        <div class="container mt-6">
+            <h3 class="title has-text-centered has-text-is-size-4">Delivery Driver – Amazon Packages</h3>
+        </div>
+        <div class="card-content">
+            <div class="content">
+                <div class="content">
+                    <ul class="no-bullets">
+                        <li>Salary $18.25 - $20.25 an hour </li>
+                        <li>Job Type Full-time, Part-time</li>
+                        <li>Number of hires for this role: On-going need to fill this role </li>
+                        <li>Qualifications: Driver's License & Car (Required), US work authorization (Required)</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="card-footer">
+                <a href="#" class="card-footer-item">Save</a>
+                <a href="#" class="card-footer-item">Apply</a>
+
+            </footer>
+        </div>
+    </div>
+</body>
+
+
+<footer class="footer">
+    <div class="notification has-background-info-dark">
+        <div class="content has-text-centered has-text-white">
+            <p>
+                <strong>Looking for a job.</strong> By the Pro Team 2. The source code is licensed under Mark, Stevon, Nelson and Victor's brains.
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="index.js"></script>
+
+
+
+</html>
