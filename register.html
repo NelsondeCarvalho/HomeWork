@@ -6,59 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Tracker</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <link rel="stylesheet" href="styles/debug.css">
+    <!-- <link rel="stylesheet" href="styles/debug.css"> -->
     <link rel="stylesheet" href="styles/bullets.css">
 </head>
 
 <body>
-    <form class="box mgt-2">
-        <h3 class="tittle has-text-centered is-size-4"><strong>Create your account</strong></h3>
-        <div class="field">
-            <label class="label">First Name</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="e.g. Maria">
-            </div>
-        </div>
-        <div class="field">
-            <label class="label">Last Name</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="e.g. Alice">
-            </div>
-        </div>
-        <div class="field">
-            <label class="label">Username</label>
-            <div class="control">
-                <input class="input is-success" type="text" placeholder="e.g Nameless_guy">
-            </div>
-            <p class="help is-success">This username is available</p>
-        </div>
-        <div class="field">
-            <label class="label">Email</label>
-            <div class="control">
-                <input class="input" type="email" placeholder="e.g. you@somedomain.com">
-            </div>
-        </div>
+    <div class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <h3 class="tittle has-text-centered is-size-3"><strong>Create your account</strong></h3>
+                <div class="columns is-centered">
+                    <div class="column is-5">
 
-        <div class="field">
-            <lable class="label">Password</lable>
-            <p class="control">
-                <input class="input" type="password" placeholder="Password">
-            </p>
-        </div>
 
-        <div class="field is-grouped is-grouped-centered">
-            <p class="control">
-                <a class="button is-primary">
+                        <form action="" class="box">
+
+                            <div class="field">
+                                <label class="label">Username</label>
+                                <div class="control">
+                                    <input class="input is-success" type="text" placeholder="e.g Nameless_guy">
+                                </div>
+                                <!-- if possible, we could implement the option to let the user know if a username is available -->
+                                <!-- <p class="help is-success">This username is available</p> -->
+                            </div>
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input" type="email" placeholder="e.g. you@somedomain.com">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <lable class="label">Password</lable>
+                                <p class="control">
+                                    <input class="input" type="password" placeholder="Password">
+                                </p>
+                            </div>
+
+                            <div class="field is-grouped is-grouped-centered">
+                                <p class="control">
+                                    <a class="button is-primary">
             Submit
           </a>
-            </p>
-            <p class="control">
-                <a class="button is-light">
+                                </p>
+                                <p class="control">
+                                    <a class="button is-light">
             Cancel
           </a>
-            </p>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <h3 class="tittle has-text-centered is-size-6">Already have an account? click <a href="" class="link">here</a> to login!</h3>
+            </div>
         </div>
-    </form>
+    </div>
 </body>
 
 </html>
